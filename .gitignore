@@ -1,1 +1,18 @@
+# === 编译产物（路线 A：全部在 build/ 里）===
+build/
+
+# === 兜底的 C++ 编译产物 ===
+# 防止偶尔有漏网之鱼（比如手动 g++ 忘了进 build/）
+*.out
+*.o
+*.obj
+*.exe
+*.dSYM/
+*.dSYM
+
+# === macOS 系统文件 ===
 .DS_Store
+._*
+
+# === VS Code 个人配置（可选）===
+.vscode/
